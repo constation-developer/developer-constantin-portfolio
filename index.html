@@ -1,0 +1,787 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Developer-Constantin</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <div class="width__logo">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 841.89 595.28"
+                        style="enable-background:new 0 0 841.89 595.28;" xml:space="preserve">
+                        <g id="black-colors">
+                            <g>
+                                <polygon class="logo__first_color"
+                                    points="166.22,257.06 120.07,297.41 166.22,337.75 166.22,357.27 97.79,297.45 97.87,297.41 97.79,297.37 166.22,237.55 " />
+                            </g>
+                            <g>
+                                <polygon class="logo__first_color" points="364.63,297.41 364.71,297.45 296.28,357.27 296.28,337.75 342.43,297.41 296.28,257.06 296.28,237.55 
+                                364.71,297.37 " />
+                            </g>
+                            <path class="logo__first_color"
+                                d="M267.62,224.57l-23.59,38.19c-1.47-2.98-3.29-5.69-5.47-8.08c-3.52-3.96-7.92-7.04-13.09-9.03
+                                c-5.28-2.2-11.22-3.18-17.82-3.18h-19.36v81.62h17.85l-28.52,46.16h14.83l89.99-145.68H267.62z M214.35,310.8
+                                c-2.09,0.34-4.32,0.53-6.7,0.53h-6.6v-56.11h6.6c9.46,0,16.61,2.64,21.45,8.04c3.16,3.48,5.24,8.17,6.12,13.75L214.35,310.8z" />
+                            <path class="logo__first_color" d="M419.76,263.37c0,5.94-1.75,11.04-5.09,14.71c-1.81,2.04-4.07,3.62-6.73,4.64c-2.72,1.08-5.77,1.64-9.17,1.64
+                                h-7.75h-2.21v-41.99h6.56h3.4c3.4,0,6.45,0.51,9.17,1.64c2.66,1.02,4.92,2.6,6.73,4.64C418.01,252.33,419.76,257.42,419.76,263.37z
+                                M413.2,263.37c0-4.3-1.19-7.87-3.4-10.3c-2.49-2.77-6.17-4.13-11.04-4.13h-3.4v28.86h3.4c4.87,0,8.55-1.41,11.04-4.13
+                                C412.01,271.23,413.2,267.61,413.2,263.37z" />
+                            <path class="logo__first_color"
+                                d="M434.98,259.46h15.34v5.94h-15.34v13.02h18.62v5.94h-18.68h-6.51v-41.99h6.51h18.68v5.89h-18.62V259.46z" />
+                            <path class="logo__first_color"
+                                d="M478.84,270.05l11.04-27.67h7.13l-18,43.86l-19.24-43.86h7.24L478.84,270.05z" />
+                            <path class="logo__first_color"
+                                d="M510.82,259.46h15.34v5.94h-15.34v13.02h18.62v5.94h-18.68h-6.51v-41.99h6.51h18.68v5.89h-18.62V259.46z" />
+                            <path class="logo__first_color"
+                                d="M562.72,284.36h-17.6h-6.51v-41.99h6.56v36.05h17.54V284.36z" />
+                            <path class="logo__first_color" d="M577.77,282.72c-2.55-1.08-4.75-2.6-6.68-4.53c-1.92-1.92-3.45-4.13-4.53-6.68s-1.64-5.32-1.64-8.15
+                                c0-2.83,0.57-5.6,1.64-8.21c1.08-2.49,2.6-4.7,4.53-6.68c1.92-1.92,4.13-3.4,6.68-4.47c2.55-1.08,5.32-1.64,8.15-1.64
+                                c2.83,0,5.6,0.57,8.21,1.64c2.49,1.08,4.7,2.55,6.68,4.47c1.92,1.98,3.4,4.19,4.47,6.68c1.08,2.6,1.64,5.38,1.64,8.21
+                                c0,2.83-0.57,5.6-1.64,8.15s-2.55,4.75-4.47,6.68c-1.98,1.92-4.19,3.45-6.68,4.53c-2.6,1.08-5.38,1.64-8.21,1.64
+                                C583.09,284.36,580.32,283.8,577.77,282.72z M575.73,253.18c-2.72,2.72-4.25,6.34-4.25,10.19c0,3.85,1.53,7.47,4.25,10.19
+                                s6.34,4.24,10.19,4.24c3.85,0,7.47-1.53,10.19-4.24s4.24-6.34,4.24-10.19c0-3.85-1.53-7.47-4.24-10.19s-6.34-4.25-10.19-4.25
+                                C582.07,248.94,578.45,250.46,575.73,253.18z" />
+                            <path class="logo__first_color"
+                                d="M621.29,242.37h6.91c5.55,0,8.77,2.26,10.47,4.13c2.26,2.49,3.4,5.83,3.4,9.73c0,3.91-1.13,7.3-3.4,9.73
+                                c-1.7,1.92-4.92,4.19-10.47,4.19h-5.89v14.21h-6.56v-41.99H621.29z M636.17,256.24c0-1.64-0.34-4.02-1.87-5.72
+                                c-1.36-1.47-3.4-2.26-6.11-2.26h-5.89v15.96h5.89c2.72,0,4.75-0.74,6.11-2.21C635.83,260.31,636.17,257.93,636.17,256.24z" />
+                            <path class="logo__first_color"
+                                d="M655.47,259.46h15.34v5.94h-15.34v13.02h18.62v5.94h-18.68h-6.51v-41.99h6.51h18.68v5.89h-18.62V259.46z" />
+                            <path class="logo__first_color" d="M712.63,284.36h-7.41l-10.58-14.21h-4.81v14.21h-6.57v-41.99h5.55h6.9c5.55,0,8.77,2.26,10.47,4.19
+                                c2.21,2.43,3.4,5.83,3.4,9.73c0,3.85-1.19,7.24-3.4,9.68c-1.02,1.13-2.6,2.43-4.87,3.23L712.63,284.36z M695.71,264.27
+                                c2.72,0,4.75-0.79,6.06-2.26c1.58-1.7,1.87-4.08,1.87-5.72c0-1.7-0.28-4.07-1.87-5.77c-1.3-1.47-3.34-2.21-6.06-2.21h-5.89v15.96
+                                H695.71z" />
+                        </g>
+                        <g id="blue-colors">
+                            <g id="C_10_">
+                                <path class="logo__second_color"
+                                    d="M258.82,281.41c6.6,0,12.76,2.2,17.71,6.27v-15.07c-0.55-0.22-1.21-0.55-1.76-0.77
+                                c-4.73-2.06-9.76-3.05-14.89-3.17l-8.48,13.72C253.79,281.74,256.28,281.41,258.82,281.41z" />
+                                <path class="logo__second_color"
+                                    d="M258.82,337.51c-7.48,0-14.52-2.97-19.8-8.25c-3.97-3.97-6.63-8.94-7.71-14.34l-8.49,13.75
+                                c1.91,3.56,4.32,6.75,7.18,9.61c3.74,3.74,8.03,6.71,12.98,8.8c4.95,2.09,10.34,3.19,15.84,3.19c5.5,0,10.89-1.1,15.95-3.19
+                                c2.31-0.99,4.51-2.2,6.6-3.52v-17.38c-0.88,1.1-1.76,2.09-2.75,3.08C273.34,334.54,266.3,337.51,258.82,337.51z" />
+                            </g>
+                            <path class="logo__second_color"
+                                d="M419.65,347.07c-1.08,0.68-2.21,1.3-3.4,1.81c-2.6,1.08-5.38,1.64-8.21,1.64c-2.83,0-5.6-0.57-8.15-1.64
+                                c-2.55-1.08-4.75-2.6-6.68-4.53c-1.92-1.92-3.45-4.13-4.53-6.68s-1.64-5.32-1.64-8.15c0-2.83,0.57-5.6,1.64-8.21
+                                c1.08-2.49,2.6-4.75,4.53-6.68c1.92-1.92,4.13-3.45,6.68-4.47c2.55-1.13,5.32-1.64,8.15-1.64c2.83,0,5.6,0.51,8.21,1.64
+                                c0.28,0.11,0.62,0.28,0.91,0.4v7.75c-2.55-2.09-5.72-3.23-9.11-3.23c-3.85,0-7.47,1.47-10.19,4.25c-2.72,2.72-4.24,6.34-4.24,10.19
+                                c0,3.85,1.53,7.47,4.24,10.19c2.72,2.72,6.34,4.24,10.19,4.24c3.85,0,7.47-1.53,10.19-4.24c0.51-0.51,0.96-1.02,1.42-1.58V347.07z" />
+                            <path class="logo__second_color" d="M438.66,348.88c-2.55-1.08-4.75-2.6-6.68-4.53c-1.92-1.92-3.45-4.13-4.53-6.68s-1.64-5.32-1.64-8.15
+                                c0-2.83,0.57-5.6,1.64-8.21c1.08-2.49,2.6-4.7,4.53-6.68c1.92-1.92,4.13-3.4,6.68-4.47c2.55-1.08,5.32-1.64,8.15-1.64
+                                c2.83,0,5.6,0.57,8.21,1.64c2.49,1.08,4.7,2.55,6.68,4.47c1.92,1.98,3.4,4.19,4.47,6.68c1.08,2.6,1.64,5.38,1.64,8.21
+                                c0,2.83-0.57,5.6-1.64,8.15s-2.55,4.75-4.47,6.68c-1.98,1.92-4.19,3.45-6.68,4.53c-2.6,1.08-5.38,1.64-8.21,1.64
+                                C443.98,350.52,441.21,349.96,438.66,348.88z M436.63,319.34c-2.72,2.72-4.24,6.34-4.24,10.19c0,3.85,1.53,7.47,4.24,10.19
+                                c2.72,2.72,6.34,4.24,10.19,4.24s7.47-1.53,10.19-4.24c2.72-2.72,4.25-6.34,4.25-10.19c0-3.85-1.53-7.47-4.25-10.19
+                                c-2.72-2.72-6.34-4.25-10.19-4.25S439.34,316.62,436.63,319.34z" />
+                            <path class="logo__second_color"
+                                d="M483.2,323.53v27h-6.56v-43.97l26.37,28.92v-26.94h6.62v43.92L483.2,323.53z" />
+                            <path class="logo__second_color" d="M542.06,342.09c-1.19,4.08-4.87,7.3-9.45,8.21c-0.85,0.17-1.7,0.23-2.55,0.23c-1.7,0-3.4-0.28-4.98-0.91
+                                c-2.66-1.08-4.98-2.83-6.96-5.38l5.21-4.07c1.19,1.58,2.6,2.72,4.13,3.28c1.25,0.51,2.6,0.62,3.85,0.34
+                                c2.15-0.4,3.91-1.81,4.41-3.51c0.57-1.92-0.74-3.62-1.92-4.75c-1.87-1.75-4.92-4.75-5.15-4.98l-5.15-4.87
+                                c-1.58-1.53-2.66-3.23-3.23-5.04c-0.57-1.75-0.62-3.62-0.11-5.32c0.51-1.81,1.58-3.4,3.11-4.7c1.42-1.19,3.17-2.04,5.04-2.38
+                                c2.04-0.45,4.19-0.28,6.22,0.45c2.15,0.85,4.08,2.26,5.72,4.24l-5.15,4.13c-2.15-2.6-4.36-2.6-5.55-2.38
+                                c-1.47,0.28-2.72,1.25-3.06,2.43c-0.23,0.79-0.17,2.09,1.58,3.79l7.02,6.73c1.02,1.02,2.26,2.21,3.17,3.06
+                                c1.81,1.64,3.06,3.51,3.68,5.49C542.57,338.13,542.63,340.17,542.06,342.09z" />
+                            <path class="logo__second_color"
+                                d="M576.75,314.42h-11.55v36.11h-6.62v-36.11h-11.55v-5.89h29.71V314.42z" />
+                            <path class="logo__second_color" d="M601.2,341.52h-14.94l-3.57,9h-7.24l18.28-43.92l18.22,43.92h-7.19L601.2,341.52z M598.83,335.64l-5.09-12.79
+                                l-5.09,12.79H598.83z" />
+                            <path class="logo__second_color"
+                                d="M625.76,323.53v27h-6.56v-43.97l26.37,28.92v-26.94h6.62v43.92L625.76,323.53z" />
+                            <path class="logo__second_color"
+                                d="M689.38,314.42h-11.54v36.11h-6.62v-36.11h-11.54v-5.89h29.71V314.42z" />
+                            <path class="logo__second_color" d="M702.03,308.53v41.99h-5.67v-41.99H702.03z" />
+                            <path class="logo__second_color"
+                                d="M718.35,323.53v27h-6.57v-43.97l26.37,28.92v-26.94h6.62v43.92L718.35,323.53z" />
+                        </g>
+                    </svg>
+                </div>
+            </a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-alt'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-detail'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Theme change button -->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home__name">Kadir Demirel</h1>
+                    <h3 class="home__education">Frontend Developer</h3>
+
+                    <div class="home__buttons">
+                        <a download="kadir-demirel-cv" href="assets/pdf/cv.pdf" class="button button--ghost">
+                            Download CV
+                        </a>
+                        <a href="#about" class="button">About me</a>
+                    </div>
+                </div>
+
+                <div class="home__handle">
+                    <img src="assets/img/pp-2-img.png" alt="" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/kadir-demirel-b2b0bb1bb/" target="_blank" class="home__social-link">
+                        <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                    <a href="https://github.com/constation-developer" target="_blank" class="home__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://dribbble.com/" target="_blank" class="home__social-link">
+                        <i class='bx bxl-dribbble'></i>
+                    </a>
+                </div>
+
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">My Intro</span>
+            <h2 class="section__title">About Me</h2>
+
+            <div class="about__container container grid">
+                <img src="assets/img/about-img.jpg" alt="" class="about__img">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bx-award about__icon'></i>
+                            <h3 class="about__title">Education</h3>
+                            <span class="about__subtitle">1 Year</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bx-briefcase-alt about__icon'></i>
+                            <h3 class="about__title">Completed</h3>
+                            <span class="about__subtitle">1 Project</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bx-support about__icon'></i>
+                            <h3 class="about__title">Support</h3>
+                            <span class="about__subtitle">Online 7/24</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description">
+                        Front-end developer, I create web pages with UI/UX UI, I have one year of education. I try to
+                        improve myself every day.
+                    </p>
+
+                    <a href="#contact" class="button">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== WORK ===============-->
+        <section class=" work section" id="work">
+            <span class="section__subtitle">My Portfolio</span>
+            <h2 class="section__title">Recent Works</h2>
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter='all'>All</span>
+                <span class="work__item" data-filter='.web'>Web</span>
+                <span class="work__item" data-filter='.ui'>Ui/Ux</span>
+                <span class="work__item" data-filter='.graphic'>Graphic</span>
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card mix web">
+                    <img src="assets/img/work1.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Web design</h3>
+
+                    <a href="https://developer-constantin.netlify.app/" target="_blank" class="work__button">
+                        Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix ui">
+                    <img src="assets/img/work2.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Ui design</h3>
+
+                    <a href="https://www.figma.com/proto/kj6iCwMC0QVw85zVIlBtXm/Your-Home-Project?page-id=0%3A1&node-id=10%3A2&viewport=241%2C48%2C0.73&scaling=scale-down&starting-point-node-id=10%3A2" target="_blank" class="work__button">
+                        Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix graphic">
+                    <img src="assets/img/work3.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Graphic design</h3>
+
+                    <a href="assets/img/work3.jpg" target="_blank" class="work__button">
+                        Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">My abilities</span>
+            <h2 class="section__title">My Experience</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Frontend developer</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check skills__group-icon'></i>
+
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check skills__group-icon'></i>
+
+                                <div>
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check skills__group-icon'></i>
+
+                                <div>
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check skills__group-icon'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check skills__group-icon'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge skills__group-icon'></i>
+
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">None</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">UI/UX Designer</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check skills__group-icon'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Figma</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check skills__group-icon'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Adobe Ai</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check skills__group-icon'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Adobe Ps</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check skills__group-icon'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Adobe Id</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge skills__group-icon'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Sketch</h3>
+                                    <span class="skills__level">None</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SERVICES ===============-->
+        <section class="services section"">
+            <span class=" section__subtitle">My Services</span>
+            <h2 class="section__title">What I Offer</h2>
+
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <h3 class="services__title">Frontend <br> Developer</h3>
+
+                    <span class="services__button">
+                        See more <i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Frontend Developer</h3>
+                            <p class="services__modal-description">
+                                Services with more than 1 years of experience. Providing quality work to clients and
+                                companies.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        I develop the user interface.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Web page development.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        I strengthen your company's brand.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        I'm designing a usable interface.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Ui/Ux <br> Designer</h3>
+
+                    <span class="services__button">
+                        See more <i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Ui/Ux Designer</h3>
+                            <p class="services__modal-description">
+                                Services with more than 1 years of experience. Providing quality work to clients and
+                                companies.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        I'm designing a usable interface.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Graphic <br> Designer</h3>
+
+                    <span class="services__button">
+                        See more <i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Graphic Designer</h3>
+                            <p class="services__modal-description">
+                                Services with more than 1 years of experience. Providing quality work to clients and
+                                companies.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Professional logo design.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Designs suitable for the desired design.
+                                    </p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== IDENTITY ===============-->
+        <section class="about section">
+            <span class="section__subtitle">My Identity Guide</span>
+            <h2 class="section__title">Identity Guide</h2>
+
+            <div class="about__container container grid">
+                <img src="assets/img/ig-img.jpg" alt="" class="about__img">
+
+                <div class="about__data">
+
+                    <p class="about__description">
+                        You can take a look at the Developer Constantin Corporate Identity Guide, which includes information and directions such as the use of the Developer Constantin logotype on different media and floors, its dimensions, colors, sample usage areas, or you can download it to your computer as a PDF document.
+                    </p>
+
+                    <a download="identity-guide" href="assets/pdf/developer-constantin-identity-guide.pdf" class="button button--ghost">
+                        Download IG
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== TESTIMONIALS ===============-->
+        <section class="testimonial">
+
+        </section>
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Get in touch</span>
+            <h2 class="section__title">Contact Me</h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title">Talk to me</h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bx-mail-send contact__card-icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">constation.developer@gmail.com</span>
+
+                            <a href="mailto:constation.developer@gmail.com" target="_blank" class="contact__button">
+                                Write me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-whatsapp contact__card-icon'></i>
+                            <h3 class="contact__card-title">Whatsapp</h3>
+                            <span class="contact__card-data">+90-541-619-6177</span>
+
+                            <a href="https://api.whatsapp.com/qr/FYJWJEWD22NDH1?autoload=1&app_absent=0" target="_blank"
+                                class="contact__button">
+                                Write me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-instagram contact__card-icon'></i>
+                            <h3 class="contact__card-title">Instagram</h3>
+                            <span class="contact__card-data">kadir.demirel7</span>
+
+                            <a href="https://www.instagram.com/kadir.demirel7/" target="_blank" class="contact__button">
+                                Write me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title">Write me your project</h3>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Names</label>
+                            <input type="text" placeholder="Insert your name" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Mail</label>
+                            <input type="text" placeholder="Insert your email" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label for="" class="contact__form-tag">Project</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Write your project"
+                                class="contact__form-input"></textarea>
+                        </div>
+
+                        <button class="button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">
+                <div class="width__logo logo__margin">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 841.89 595.28"
+                        style="enable-background:new 0 0 841.89 595.28;" xml:space="preserve">
+                        <g id="logotayp">
+                            <g>
+                                <g>
+                                    <polygon class="st0" points="166.06,257.07 119.91,297.41 166.06,337.76 166.06,357.27 97.63,297.46 97.71,297.41 97.63,297.37 
+                                    166.06,237.56 " />
+                                </g>
+                                <g>
+                                    <polygon class="st0" points="364.47,297.41 364.55,297.46 296.12,357.27 296.12,337.76 342.27,297.41 296.12,257.07 
+                                    296.12,237.56 364.55,297.37 " />
+                                </g>
+                                <path class="st0"
+                                    d="M267.46,224.57l-23.62,38.23c-1.48-3-3.31-5.73-5.5-8.14c-3.52-3.96-7.92-7.04-13.09-9.03
+                                    c-5.28-2.2-11.22-3.18-17.82-3.18h-19.36v81.62h17.92l-28.53,46.19h14.83l89.99-145.69H267.46z M214.21,310.77
+                                    c-2.11,0.35-4.37,0.54-6.78,0.54h-6.6v-56.1h6.6c9.46,0,16.61,2.63,21.45,8.03c3.18,3.5,5.27,8.22,6.14,13.84L214.21,310.77z" />
+                                <g id="C_6_">
+                                    <path class="st0"
+                                        d="M258.66,281.41c6.6,0,12.76,2.2,17.71,6.27v-15.07c-0.55-0.22-1.21-0.55-1.76-0.77
+                                    c-4.73-2.06-9.76-3.05-14.89-3.17l-8.48,13.72C253.63,281.75,256.12,281.41,258.66,281.41z" />
+                                    <path class="st0"
+                                        d="M258.66,337.51c-7.48,0-14.52-2.97-19.8-8.25c-3.97-3.97-6.63-8.94-7.71-14.34l-8.49,13.75
+                                    c1.91,3.56,4.32,6.75,7.18,9.61c3.74,3.74,8.03,6.71,12.98,8.8c4.95,2.09,10.34,3.19,15.84,3.19s10.89-1.1,15.95-3.19
+                                    c2.31-0.99,4.51-2.2,6.6-3.52v-17.38c-0.88,1.1-1.76,2.09-2.75,3.08C273.18,334.54,266.14,337.51,258.66,337.51z" />
+                                </g>
+                            </g>
+                            <g>
+                                <path class="st0" d="M419.6,263.37c0,5.94-1.75,11.04-5.09,14.71c-1.81,2.04-4.07,3.62-6.73,4.64c-2.72,1.08-5.77,1.64-9.17,1.64
+                                    h-7.75h-2.21v-41.99h6.56h3.4c3.4,0,6.45,0.51,9.17,1.64c2.66,1.02,4.92,2.6,6.73,4.64C417.84,252.33,419.6,257.43,419.6,263.37z
+                                    M413.03,263.37c0-4.3-1.19-7.87-3.4-10.3c-2.49-2.77-6.17-4.13-11.04-4.13h-3.4v28.86h3.4c4.87,0,8.55-1.41,11.04-4.13
+                                    C411.84,271.24,413.03,267.61,413.03,263.37z" />
+                                <path class="st0"
+                                    d="M434.82,259.46h15.34v5.94h-15.34v13.02h18.62v5.94h-18.68h-6.51v-41.99h6.51h18.68v5.89h-18.62V259.46z" />
+                                <path class="st0"
+                                    d="M478.68,270.05l11.04-27.67h7.13l-18,43.86l-19.24-43.86h7.24L478.68,270.05z" />
+                                <path class="st0"
+                                    d="M510.65,259.46h15.34v5.94h-15.34v13.02h18.62v5.94H510.6h-6.51v-41.99h6.51h18.68v5.89h-18.62V259.46z" />
+                                <path class="st0"
+                                    d="M562.55,284.37h-17.6h-6.51v-41.99h6.56v36.05h17.54V284.37z" />
+                                <path class="st0" d="M577.6,282.72c-2.55-1.08-4.75-2.6-6.68-4.53c-1.92-1.92-3.45-4.13-4.53-6.68s-1.64-5.32-1.64-8.15
+                                    c0-2.83,0.57-5.6,1.64-8.21c1.08-2.49,2.6-4.7,4.53-6.68c1.92-1.92,4.13-3.4,6.68-4.47c2.55-1.08,5.32-1.64,8.15-1.64
+                                    c2.83,0,5.6,0.57,8.21,1.64c2.49,1.08,4.7,2.55,6.68,4.47c1.92,1.98,3.4,4.19,4.47,6.68c1.08,2.6,1.64,5.38,1.64,8.21
+                                    c0,2.83-0.57,5.6-1.64,8.15s-2.55,4.75-4.47,6.68c-1.98,1.92-4.19,3.45-6.68,4.53c-2.6,1.08-5.38,1.64-8.21,1.64
+                                    C582.92,284.37,580.15,283.8,577.6,282.72z M575.57,253.18c-2.72,2.72-4.25,6.34-4.25,10.19c0,3.85,1.53,7.47,4.25,10.19
+                                    s6.34,4.24,10.19,4.24c3.85,0,7.47-1.53,10.19-4.24s4.24-6.34,4.24-10.19c0-3.85-1.53-7.47-4.24-10.19s-6.34-4.25-10.19-4.25
+                                    C581.91,248.94,578.28,250.46,575.57,253.18z" />
+                                <path class="st0"
+                                    d="M621.12,242.37h6.91c5.55,0,8.77,2.26,10.47,4.13c2.26,2.49,3.4,5.83,3.4,9.73c0,3.91-1.13,7.3-3.4,9.73
+                                    c-1.7,1.92-4.92,4.19-10.47,4.19h-5.89v14.21h-6.56v-41.99H621.12z M636.01,256.24c0-1.64-0.34-4.02-1.87-5.72
+                                    c-1.36-1.47-3.4-2.26-6.11-2.26h-5.89v15.96h5.89c2.72,0,4.75-0.74,6.11-2.21C635.67,260.31,636.01,257.94,636.01,256.24z" />
+                                <path class="st0"
+                                    d="M655.31,259.46h15.34v5.94h-15.34v13.02h18.62v5.94h-18.68h-6.51v-41.99h6.51h18.68v5.89h-18.62V259.46z" />
+                                <path class="st0" d="M712.47,284.37h-7.41l-10.58-14.21h-4.81v14.21h-6.57v-41.99h5.55h6.9c5.55,0,8.77,2.26,10.47,4.19
+                                    c2.21,2.43,3.4,5.83,3.4,9.73c0,3.85-1.19,7.24-3.4,9.68c-1.02,1.13-2.6,2.43-4.87,3.23L712.47,284.37z M695.54,264.27
+                                    c2.72,0,4.75-0.79,6.06-2.26c1.58-1.7,1.87-4.08,1.87-5.72c0-1.7-0.28-4.07-1.87-5.77c-1.3-1.47-3.34-2.21-6.06-2.21h-5.89v15.96
+                                    H695.54z" />
+                                <path class="st0" d="M419.48,347.07c-1.08,0.68-2.21,1.3-3.4,1.81c-2.6,1.08-5.38,1.64-8.21,1.64c-2.83,0-5.6-0.57-8.15-1.64
+                                    c-2.55-1.08-4.75-2.6-6.68-4.53c-1.92-1.92-3.45-4.13-4.53-6.68s-1.64-5.32-1.64-8.15c0-2.83,0.57-5.6,1.64-8.21
+                                    c1.08-2.49,2.6-4.75,4.53-6.68c1.92-1.92,4.13-3.45,6.68-4.47c2.55-1.13,5.32-1.64,8.15-1.64c2.83,0,5.6,0.51,8.21,1.64
+                                    c0.28,0.11,0.62,0.28,0.91,0.4v7.75c-2.55-2.09-5.72-3.23-9.11-3.23c-3.85,0-7.47,1.47-10.19,4.25
+                                    c-2.72,2.72-4.24,6.34-4.24,10.19c0,3.85,1.53,7.47,4.24,10.19c2.72,2.72,6.34,4.24,10.19,4.24c3.85,0,7.47-1.53,10.19-4.24
+                                    c0.51-0.51,0.96-1.02,1.42-1.58V347.07z" />
+                                <path class="st0" d="M438.5,348.88c-2.55-1.08-4.75-2.6-6.68-4.53c-1.92-1.92-3.45-4.13-4.53-6.68s-1.64-5.32-1.64-8.15
+                                    c0-2.83,0.57-5.6,1.64-8.21c1.08-2.49,2.6-4.7,4.53-6.68c1.92-1.92,4.13-3.4,6.68-4.47c2.55-1.08,5.32-1.64,8.15-1.64
+                                    c2.83,0,5.6,0.57,8.21,1.64c2.49,1.08,4.7,2.55,6.68,4.47c1.92,1.98,3.4,4.19,4.47,6.68c1.08,2.6,1.64,5.38,1.64,8.21
+                                    c0,2.83-0.57,5.6-1.64,8.15s-2.55,4.75-4.47,6.68c-1.98,1.92-4.19,3.45-6.68,4.53c-2.6,1.08-5.38,1.64-8.21,1.64
+                                    C443.82,350.52,441.05,349.96,438.5,348.88z M436.46,319.34c-2.72,2.72-4.24,6.34-4.24,10.19c0,3.85,1.53,7.47,4.24,10.19
+                                    c2.72,2.72,6.34,4.24,10.19,4.24s7.47-1.53,10.19-4.24c2.72-2.72,4.25-6.34,4.25-10.19c0-3.85-1.53-7.47-4.25-10.19
+                                    c-2.72-2.72-6.34-4.25-10.19-4.25S439.18,316.62,436.46,319.34z" />
+                                <path class="st0"
+                                    d="M483.04,323.53v27h-6.56v-43.97l26.37,28.92v-26.94h6.62v43.92L483.04,323.53z" />
+                                <path class="st0"
+                                    d="M541.9,342.09c-1.19,4.08-4.87,7.3-9.45,8.21c-0.85,0.17-1.7,0.23-2.55,0.23c-1.7,0-3.4-0.28-4.98-0.91
+                                    c-2.66-1.08-4.98-2.83-6.96-5.38l5.21-4.07c1.19,1.58,2.6,2.72,4.13,3.28c1.25,0.51,2.6,0.62,3.85,0.34
+                                    c2.15-0.4,3.91-1.81,4.41-3.51c0.57-1.92-0.74-3.62-1.92-4.75c-1.87-1.75-4.92-4.75-5.15-4.98l-5.15-4.87
+                                    c-1.58-1.53-2.66-3.23-3.23-5.04c-0.57-1.75-0.62-3.62-0.11-5.32c0.51-1.81,1.58-3.4,3.11-4.7c1.42-1.19,3.17-2.04,5.04-2.38
+                                    c2.04-0.45,4.19-0.28,6.22,0.45c2.15,0.85,4.08,2.26,5.72,4.24l-5.15,4.13c-2.15-2.6-4.36-2.6-5.55-2.38
+                                    c-1.47,0.28-2.72,1.25-3.06,2.43c-0.23,0.79-0.17,2.09,1.58,3.79l7.02,6.73c1.02,1.02,2.26,2.21,3.17,3.06
+                                    c1.81,1.64,3.06,3.51,3.68,5.49C542.41,338.13,542.46,340.17,541.9,342.09z" />
+                                <path class="st0"
+                                    d="M576.59,314.42h-11.55v36.11h-6.62v-36.11h-11.55v-5.89h29.71V314.42z" />
+                                <path class="st0" d="M601.04,341.53H586.1l-3.57,9h-7.24l18.28-43.92l18.22,43.92h-7.19L601.04,341.53z M598.66,335.64
+                                    l-5.09-12.79l-5.09,12.79H598.66z" />
+                                <path class="st0"
+                                    d="M625.6,323.53v27h-6.56v-43.97l26.37,28.92v-26.94h6.62v43.92L625.6,323.53z" />
+                                <path class="st0"
+                                    d="M689.21,314.42h-11.54v36.11h-6.62v-36.11H659.5v-5.89h29.71V314.42z" />
+                                <path class="st0" d="M701.86,308.53v41.99h-5.67v-41.99H701.86z" />
+                                <path class="st0"
+                                    d="M718.19,323.53v27h-6.57v-43.97l26.37,28.92v-26.94h6.62v43.92L718.19,323.53z" />
+                            </g>
+                            <rect x="436.09" y="297.41" class="st1" width="2.35" height="0" />
+                        </g>
+                    </svg>
+
+                </div>
+            </h1>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+
+                <li>
+                    <a href="#work" class="footer__link">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="footer__link">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <a href="https://www.instagram.com/kadir.demirel7/" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+                <a href="https://twitter.com/bugecedebonita" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-twitter' ></i>
+                </a>
+                <a href="https://www.linkedin.com/in/kadir-demirel-b2b0bb1bb/" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-linkedin' ></i>
+                </a>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; Developer-constantin. All rigths reserved
+            </span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src=""></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
